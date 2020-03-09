@@ -1548,7 +1548,7 @@ public:
 
         if (xmr_address_str.empty())
         {
-            return string("MoneroV address not provided!");
+            return string("ByteRub address not provided!");
         }
 
         if (viewkey_str.empty())
@@ -1574,7 +1574,7 @@ public:
         if (!xmreg::parse_str_address(xmr_address_str,  address_info, nettype))
         {
             cerr << "Cant parse string address: " << xmr_address_str << endl;
-            return string("Cant parse xmv address: " + xmr_address_str);
+            return string("Cant parse btr address: " + xmr_address_str);
         }
 
         // parse string representing given private key
@@ -4780,7 +4780,7 @@ public:
         if (address_str.empty())
         {
             j_response["status"]  = "error";
-            j_response["message"] = "MoneroV address not provided";
+            j_response["message"] = "ByteRub address not provided";
             return j_response;
         }
 
@@ -4817,7 +4817,7 @@ public:
         if (!xmreg::parse_str_address(address_str,  address_info, nettype))
         {
             j_response["status"]  = "error";
-            j_response["message"] = "Cant parse MoneroV address: " + address_str;
+            j_response["message"] = "Cant parse ByteRub address: " + address_str;
             return j_response;
 
         }
@@ -5005,7 +5005,7 @@ public:
         if (address_str.empty())
         {
             j_response["status"]  = "error";
-            j_response["message"] = "MoneroV address not provided";
+            j_response["message"] = "ByteRub address not provided";
             return j_response;
         }
 
@@ -5022,7 +5022,7 @@ public:
         if (!xmreg::parse_str_address(address_str, address_info, nettype))
         {
             j_response["status"]  = "error";
-            j_response["message"] = "Cant parse MoneroV address: " + address_str;
+            j_response["message"] = "Cant parse ByteRub address: " + address_str;
             return j_response;
 
         }
@@ -5171,7 +5171,7 @@ public:
         if (!get_monero_network_info(j_info))
         {
             j_response["status"]  = "error";
-            j_response["message"] = "Cant get MoneroV network info";
+            j_response["message"] = "Cant get ByteRub network info";
             return j_response;
         }
 

@@ -156,14 +156,14 @@ public:
 
             if (!err.empty())
             {
-                cerr << "Error connecting to MoneroV deamon due to "
+                cerr << "Error connecting to ByteRub deamon due to "
                      << err << endl;
                 return false;
             }
         }
         else
         {
-            cerr << "Error connecting to MoneroV deamon at "
+            cerr << "Error connecting to ByteRub deamon at "
                  << deamon_url << endl;
             return false;
         }
